@@ -1,0 +1,94 @@
+<div class="content-container" [ngStyle]="{'background-color': backcolor}">
+    <div class="name" *ngIf="name">
+    {{'Usuario: '+name}}
+</div>
+    <div class="backco">
+        <label for="backcolor">COLOR DE FONDO</label>
+        <input type="color" name="" id="backcolor" [(ngModel)]="backcolor">
+        <input type="button" value="Presioname" class="button" (click)="enterName()">
+    </div>
+    <div class="clippy">
+       
+        <div class="shape-container">
+            <div class="first-controls">
+                <div class="punta punta1">
+                    <div class="circle-reference" [ngStyle]="{'background-color':'green'}"></div>
+                    <input type="range" name="" id="" [(ngModel)]="shape[0]">
+                    <input type="range" name="" id="" [(ngModel)]="shape[1]">
+                </div>
+                <div class="punta punta1">
+                    <div class="circle-reference" [ngStyle]="{'background-color':'red'}"></div>
+                    <input type="range" name="" id="" [(ngModel)]="shape[2]">
+                    <input type="range" name="" id="" [(ngModel)]="shape[3]">
+                </div>
+                <div class="punta punta1">
+                    <div class="circle-reference" [ngStyle]="{'background-color':'yellow'}"></div>
+                    <input type="range" name="" id="" [(ngModel)]="shape[4]">
+                    <input type="range" name="" id="" [(ngModel)]="shape[5]">
+                </div>
+                <div class="punta punta1">
+                    <div class="circle-reference" [ngStyle]="{'background-color':'blue'}"></div>
+                    <input type="range" name="" id="" [(ngModel)]="shape[6]">
+                    <input type="range" name="" id="" [(ngModel)]="shape[7]">
+                </div>
+                <div class="punta punta1">
+                    <div class="circle-reference" [ngStyle]="{'background-color':'salmon'}"></div>
+                    <input type="range" name="" id="" [(ngModel)]="shape[8]">
+                    <input type="range" name="" id="" [(ngModel)]="shape[9]">
+                </div>
+            </div>
+            <div class="second-controls">
+                <div class="punta punta1">
+                    <div class="circle-reference" [ngStyle]="{'background-color':'brown'}"></div>
+                    <input type="range" name="" id="" [(ngModel)]="shape[10]">
+                    <input type="range" name="" id="" [(ngModel)]="shape[11]">
+                </div>
+                <div class="punta punta1">
+                    <div class="circle-reference" [ngStyle]="{'background-color':'orange'}"></div>
+                    <input type="range" name="" id="" [(ngModel)]="shape[12]">
+                    <input type="range" name="" id="" [(ngModel)]="shape[13]">
+                </div>
+                <div class="punta punta1">
+                    <div class="circle-reference" [ngStyle]="{'background-color':'purple'}"></div>
+                    <input type="range" name="" id="" [(ngModel)]="shape[14]">
+                    <input type="range" name="" id="" [(ngModel)]="shape[15]">
+                </div>
+                <div class="punta punta1">
+                    <div class="circle-reference" [ngStyle]="{'background-color':'gray'}"></div>
+                    <input type="range" name="" id="" [(ngModel)]="shape[16]">
+                    <input type="range" name="" id="" [(ngModel)]="shape[17]">
+                </div>
+                <div class="punta punta1">
+                    <div class="circle-reference" [ngStyle]="{'background-color':'cyan'}"></div>
+                    <input type="range" name="" id="" [(ngModel)]="shape[18]">
+                    <input type="range" name="" id="" [(ngModel)]="shape[19]">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="forma"
+        [ngStyle]="{'clip-path': 'polygon('+shape[0]+'% '+shape[1]+'%, '+shape[2]+'% '+shape[3]+'%, '+shape[4]+'% '+shape[5]+'%, '+shape[6]+'% '+shape[7]+'%,'+shape[8]+'% '+shape[9]+'%, '+shape[10]+'% '+shape[11]+'%,'+shape[12]+'% '+shape[13]+'%, '+shape[14]+'% '+shape[15]+'%, '+shape[16]+'% '+shape[17]+'%, '+shape[18]+'% '+shape[19]+'%)'}">
+        <div class="circle" [ngStyle]="{'left': shape[0]+'%', 'top':shape[1]+'%', 'background-color': 'green'}">
+        </div>
+        <div class="circle" [ngStyle]="{'left': shape[2]+'%', 'top':shape[3]+'%', 'background-color': 'red'}">
+        </div>
+        <div class="circle" [ngStyle]="{'left': shape[4]+'%', 'top':shape[5]+'%', 'background-color': 'yellow'}">
+        </div>
+        <div class="circle" [ngStyle]="{'left': shape[6]+'%', 'top':shape[7]+'%', 'background-color': 'blue'}">
+        </div>
+        <div class="circle" [ngStyle]="{'left': shape[8]+'%', 'top':shape[9]+'%', 'background-color': 'salmon'}">
+        </div>
+        <div class="circle" [ngStyle]="{'left': shape[10]+'%', 'top':shape[11]+'%', 'background-color': 'brown'}">
+        </div>
+        <div class="circle" [ngStyle]="{'left': shape[12]+'%', 'top':shape[13]+'%', 'background-color': 'orange'}">
+        </div>
+        <div class="circle" [ngStyle]="{'left': shape[14]+'%', 'top':shape[15]+'%', 'background-color': 'purple'}">
+        </div>
+        <div class="circle" [ngStyle]="{'left': shape[16]+'%', 'top':shape[17]+'%', 'background-color': 'gray'}">
+        </div>
+        <div class="circle" [ngStyle]="{'left': shape[18]+'%', 'top':shape[19]+'%', 'background-color': 'cyan'}">
+        </div>
+    
+    </div>
+</div>
